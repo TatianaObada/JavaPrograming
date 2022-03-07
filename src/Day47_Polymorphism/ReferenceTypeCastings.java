@@ -1,20 +1,10 @@
 package Day47_Polymorphism;
 
-import day43_Abstraction.employeeTask.*;
-import day44_Abstraction.animalTask.Animal;
-import day44_Abstraction.animalTask.Cat;
-import day44_Abstraction.animalTask.Dog;
-import day45_Abstraction.shape.Circle;
-import day45_Abstraction.shape.Cube;
-import day45_Abstraction.shape.Shape;
-import day45_Abstraction.shape.Square;
-import Day31_Constructors.Person;
-import Day31_Constructors.scrumTask.Tester;
 
 public class ReferenceTypeCastings {
     public static void main(String[] args) {
 
-
+/*
         //   Shape shape = (Shape) new Circle(4); //upcasting
 
         Shape shape2 = new Circle(5);
@@ -80,7 +70,7 @@ public class ReferenceTypeCastings {
 
 
 
-
+*/
 
     }
 }

@@ -1,8 +1,8 @@
 package Day47_Polymorphism;
 
+
 import Day31_Constructors.scrumTask.Developer;
 import Day31_Constructors.scrumTask.Tester;
-import day43_Abstraction.employeeTask.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
 public class PolymorphismPractice2 {
     public static void main(String[] args) {
 
-        Employee[] employees = {
+/*        Employee[] employees = {
                 new Tester("Sherali", 32, 'M',1, "QA", 110000),
                 new Developer("Zuhal", 27, 'F', 2, "Java Developer", 128000),
                 new Tester("George", 28,'M', 3, "SDET", 120000),
@@ -60,7 +60,7 @@ public class PolymorphismPractice2 {
         Developer developerWithMaxSalary = developers.get(0);
 
 
-
+*/
 
 
     }

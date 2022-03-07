@@ -1,11 +1,11 @@
-Java Day48
+Java Day48_Collection
 Topic: Collections Intro
 
 package name: day48_Collections
 
 
 Data Structures: work with data
-	
+
 	Array
 	Collection
 	Map
@@ -54,8 +54,8 @@ Collection (I): Size is dynamic
 
 
 
-Synchronized: multiple threads are being executed one thread at time 
-			
+Synchronized: multiple threads are being executed one thread at time
+
 			advantage: thread-safe
 			disadvantage: slower
 
@@ -79,7 +79,7 @@ multi-tasking: two or more process are running
 concurrently vs parellely:
 
 		concurrently:  1000 * 5 ===> 5000 seconds ===> 10000 threads
-			
+
 			chromer browser (process)	 ===> 10000 threads
 
 
@@ -98,7 +98,7 @@ concurrently vs parellely:
 
 
 ArrayList vs LinkedList vs Vector vs Stack:
-		
+
 		All of them are Lists (allows duplicates, has index)
 
 		ArrayList: searching elements are faster
