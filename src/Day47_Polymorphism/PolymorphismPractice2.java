@@ -1,12 +1,6 @@
 package Day47_Polymorphism;
 
 
-import Day31_Constructors.scrumTask.Developer;
-import Day31_Constructors.scrumTask.Tester;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class PolymorphismPractice2 {
     public static void main(String[] args) {
 

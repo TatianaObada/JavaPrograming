@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class StringUtility {
 
+
     //prints each character of the given string
     public static void printEachChar(String str){
 
@@ -60,6 +61,8 @@ public class StringUtility {
 
         return result;
     }
+
+
 
 
 }

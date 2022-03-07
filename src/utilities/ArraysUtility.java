@@ -46,17 +46,22 @@ public class ArraysUtility {
         return numbers[numbers.length-1];
     }
 
+
+
     //returns the minimum number from integer array
     public static int min(int[] numbers){
         Arrays.sort(numbers);
         return numbers[0];
     }
 
+
     //returns the minimum number from double array
     public static double min(double[] numbers){
         Arrays.sort(numbers);
         return numbers[0];
     }
+
+
 
     //checks if the given integer is contained in the given array. returns boolean.  contains(int[], int)
     public static boolean contains(int[] array, int element){
@@ -72,6 +77,7 @@ public class ArraysUtility {
         return result;
     }
 
+
     //checks if the given double is contained in the given array. returns boolean.
     public static boolean contains(double[] array, double element){
 
@@ -85,6 +91,7 @@ public class ArraysUtility {
 
         return result;
     }
+
 
     //checks if the given char is contained in the given array. returns boolean.
     public static boolean contains(char[] array, char element){
@@ -233,6 +240,8 @@ public class ArraysUtility {
 
         return count;
     }
+
+
 
     // returns the unique elements of the array as a new array
     public static int[] uniqueElements(int[] array){
@@ -393,20 +402,296 @@ public class ArraysUtility {
         int[] result = {};
 
         for (int each : arr1) {
-            result = addElement(result, each);
+            result = ArraysUtility.addElement(result, each);
         }
 
         for (int each : arr2) {
-            result = addElement(result, each);
+            result = ArraysUtility.addElement(result, each);
         }
 
         return result;
     }
 
 
-    //merge
-    //removeElements
-    //reverse
-    //uniqueElement
-    //removeDuplicates
+    // merge the given two arrays and returns the new array
+    public static double[] merge(double[] arr1, double[] arr2){
+
+        double[] result = {};
+
+        for (double each : arr1) {
+            result = ArraysUtility.addElement(result, each);
+        }
+
+        for (double each : arr2) {
+            result = ArraysUtility.addElement(result, each);
+        }
+
+        return result;
+    }
+
+
+    // merge the given two arrays and returns the new array
+    public static char[] merge(char[] arr1, char[] arr2){
+
+        char[] result = {};
+
+        for (char each : arr1) {
+            result = ArraysUtility.addElement(result, each);
+        }
+
+        for (char each : arr2) {
+            result = ArraysUtility.addElement(result, each);
+        }
+
+        return result;
+    }
+
+
+    // merge the given two arrays and returns the new array
+    public static String[] merge(String[] arr1, String[] arr2){
+
+        String[] result = {};
+
+        for (String each : arr1) {
+            result = ArraysUtility.addElement(result, each);
+        }
+
+        for (String each : arr2) {
+            result = ArraysUtility.addElement(result, each);
+        }
+
+        return result;
+    }
+
+
+
+    //reverses the given array, returns a new array
+    public static int[] reverse(int[] array){
+
+        int[] result = new int[array.length];
+        int j = 0;
+        for (int i = array.length - 1; i >= 0; i--) {
+            result[j++] = array[i];
+        }
+
+        return result;
+    }
+
+
+    //reverses the given array, returns a new array
+    public static double[] reverse(double[] array){
+
+        double[] result = new double[array.length];
+        int j = 0;
+        for (int i = array.length - 1; i >= 0; i--) {
+            result[j++] = array[i];
+        }
+
+        return result;
+    }
+
+
+    //reverses the given array, returns a new array
+    public static char[] reverse(char[] array){
+
+        char[] result = new char[array.length];
+        int j = 0;
+        for (int i = array.length - 1; i >= 0; i--) {
+            result[j++] = array[i];
+        }
+
+        return result;
+    }
+
+
+    //reverses the given array, returns a new array
+    public static String[] reverse(String[] array){
+
+        String[] result = new String[array.length];
+        int j = 0;
+        for (int i = array.length - 1; i >= 0; i--) {
+            result[j++] = array[i];
+        }
+
+        return result;
+    }
+
+
+
+    //replace the elements of the array at given index with the new element
+    public static int[] replace(int[] array, int index, int newElement){
+
+        if(index <0 || index > array.length-1){
+            System.err.println("Invalid Index: "+index);
+            System.exit(0);
+        }
+
+        array[index] = newElement;
+        return array;
+    }
+
+
+    //replace the elements of the array at given index with the new element
+    public static double[] replace(double[] array, int index, double newElement){
+
+        if(index <0 || index > array.length-1){
+            System.err.println("Invalid Index: "+index);
+            System.exit(0);
+        }
+
+        array[index] = newElement;
+        return array;
+    }
+
+
+    //replace the elements of the array at given index with the new element
+    public static char[] replace(char[] array, int index, char newElement){
+
+        if(index <0 || index > array.length-1){
+            System.err.println("Invalid Index: "+index);
+            System.exit(0);
+        }
+
+        array[index] = newElement;
+        return array;
+    }
+
+
+    //replace the elements of the array at given index with the new element
+    public static String[] replace(String[] array, int index, String newElement){
+
+        if(index <0 || index > array.length-1){
+            System.err.println("Invalid Index: "+index);
+            System.exit(0);
+        }
+
+        array[index] = newElement;
+        return array;
+    }
+
+
+    // replaces all the matching old values of the array with the new value
+    public static int[] replaceAll(int[] array, int oldValue, int newValue) {
+
+        for (int i = 0; i < array.length; i++) {
+
+            if (array[i] == oldValue) {
+                array[i] = newValue;
+            }
+
+        }
+
+        return array;
+
+    }
+
+
+    // replaces all the matching old values of the array with the new value
+    public static double[] replaceAll(double[] array, double oldValue, double newValue) {
+
+        for (int i = 0; i < array.length; i++) {
+
+            if (array[i] == oldValue) {
+                array[i] = newValue;
+            }
+
+        }
+
+        return array;
+
+    }
+
+
+    // replaces all the matching old values of the array with the new value
+    public static char[] replaceAll(char[] array, char oldValue, char newValue) {
+
+        for (int i = 0; i < array.length; i++) {
+
+            if (array[i] == oldValue) {
+                array[i] = newValue;
+            }
+
+        }
+
+        return array;
+
+    }
+
+
+    // replaces all the matching old values of the array with the new value
+    public static String[] replaceAll(String[] array, String oldValue, String newValue) {
+
+        for (int i = 0; i < array.length; i++) {
+
+            if (array[i].equals( oldValue) ) {
+                array[i] = newValue;
+            }
+
+        }
+
+        return array;
+
+    }
+
+
+
+    //removes the duplicates from the given array, returns the new array
+    public static int[] removeDuplicates(int[] array){
+
+        int[] result = {};//{1,
+
+        for (int each : array) {
+            if(!ArraysUtility.contains(result, each)){
+                result = ArraysUtility.addElement(result, each);
+            }
+        }
+
+        return result;
+    }
+
+
+    //removes the duplicates from the given array, returns the new array
+    public static double[] removeDuplicates(double[] array){
+
+        double[] result = {};//{1,
+
+        for (double each : array) {
+            if(!ArraysUtility.contains(result, each)){
+                result = ArraysUtility.addElement(result, each);
+            }
+        }
+
+        return result;
+    }
+
+
+    //removes the duplicates from the given array, returns the new array
+    public static char[] removeDuplicates(char[] array){
+
+        char[] result = {};//{1,
+
+        for (char each : array) {
+            if(!ArraysUtility.contains(result, each)){
+                result = ArraysUtility.addElement(result, each);
+            }
+        }
+
+        return result;
+    }
+
+
+    //removes the duplicates from the given array, returns the new array
+    public static String[] removeDuplicates(String[] array){
+
+        String[] result = {};//{1,
+
+        for (String each : array) {
+            if(!ArraysUtility.contains(result, each)){
+                result = ArraysUtility.addElement(result, each);
+            }
+        }
+
+        return result;
+    }
+
 }
